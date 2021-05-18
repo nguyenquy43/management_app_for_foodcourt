@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_baseline_restaurant_menu_24"
+            android:title="Menu Food" />
+
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_baseline_assignment_24"
+            android:title="Report" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log Out"
+            android:icon="@drawable/ic_baseline_reply_24" />
+    </group>
+
+</menu>

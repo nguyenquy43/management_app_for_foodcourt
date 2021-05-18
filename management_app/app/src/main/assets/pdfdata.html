@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Countries and Movies</title>
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0" >
+    <style>
+		.title { color: #008080 }
+		.country { color: #5f9ea0 }
+		.column1 { width:10%; text-align: center; }
+		.column2 { width:50%; }
+		.column3 { width:15%; text-align: center; }
+		.column4 { width:10%; text-align: center; }
+		.column5 { width:15%; text-align: center; }
+
+		p {
+			font-size: 12pt;
+			margin: 1em 0;
+		}
+		h1 {
+			font-size: 14pt;
+			font-weight: bold;
+			margin: 0.67em 0;
+		}
+		table {
+			width:100%;
+			margin-bottom: 0.4pt;
+			margin-top: 0;
+			margin-left: 0;
+			margin-right: 0;
+			text-indent: 0;
+		}
+		tr {
+			vertical-align: inherit;
+		}
+		table > tr {
+			vertical-align: middle;
+		}
+		td {
+			background-color:#F7F7F7;
+			font-size:10pt;
+			padding: 1px;
+			text-align: inherit;
+			vertical-align: inherit;
+		}
+		th {
+			background-color: #5f9ea0;
+			font-size:10pt;
+			color:#FFFFFF;
+			display: table-cell;
+			font-weight: bold;
+			padding: 1px;
+			vertical-align: inherit;
+		}
+	</style>
+	<!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart', 'line']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawQuantityChart);
+	  
+	  google.charts.setOnLoadCallback(drawRevenueChart);
+	  
+	  google.charts.setOnLoadCallback(drawLineChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+	  
